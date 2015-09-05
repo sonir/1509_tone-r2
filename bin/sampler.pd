@@ -1,4 +1,4 @@
-#N canvas 311 219 696 518 10;
+#N canvas 311 219 937 607 10;
 #X obj 124 76 dumpOSC 57110;
 #X symbolatom 124 133 10 0 0 0 - - -;
 #X obj 371 185 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -10,6 +10,11 @@
 #X msg 434 254 0;
 #X obj 432 224 delay 50;
 #X obj 226 100 route /test;
+#X msg 626 158 \; pd dsp 1;
+#X obj 602 99 loadbang;
+#X text 596 69 Turn DSP on when Pd turns on;
+#X obj 602 127 delay 1000;
+#X obj 602 200 print pd::DSP_Started;
 #X connect 0 0 1 0;
 #X connect 0 0 9 0;
 #X connect 2 0 6 0;
@@ -21,3 +26,6 @@
 #X connect 7 0 5 1;
 #X connect 8 0 7 0;
 #X connect 9 0 2 0;
+#X connect 11 0 13 0;
+#X connect 13 0 10 0;
+#X connect 13 0 14 0;
