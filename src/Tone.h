@@ -10,7 +10,7 @@
 #define __tone_r2__Tone__
 
 #define PD_PORT 57110
-#define SENSOR_PORT 57120
+#define SENSOR_PORT 5678
 
 #include <stdio.h>
 #include "Sensor.h"

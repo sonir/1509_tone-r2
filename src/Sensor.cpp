@@ -17,7 +17,11 @@ void Sensor::fireMessage(ofxOscMessage *m){
         cout << "test" << endl;
         float fnum = m->getArgAsFloat(0);
         sys->test();
+    }else{
+        
+        cout << "other" << endl;
+        
     }
-    //
+    
   
 }
