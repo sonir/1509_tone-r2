@@ -144,7 +144,7 @@ try:
             speed /= speed_ave
 
             if speed < speed_highpass:
-                speed = 0
+                speed = 0.0
 
             #check if it makes one rotation
             isRotate = 0
