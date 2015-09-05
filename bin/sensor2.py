@@ -1,6 +1,6 @@
 #defines
-#mode = "GLOBAL"
-mode = "LOCAL"
+mode = "GLOBAL"
+#mode = "LOCAL"
 
 #import libraries
 import smbus
@@ -98,10 +98,9 @@ try:
             while GPIO.input(SW) == 1:
                 if counter < 50:
                     GPIO.output(REC_LED, GPIO.HIGH)
-                    GPIO.output(PLAY_LED, GPIO.HIGH)
                 else:
                     GPIO.output(REC_LED, GPIO.LOW)
-                    GPIO.output(PLAY_LED, GPIO.LOW)
+
                 counter += 1;
                 if counter > 100:
                     counter = 0
@@ -114,7 +113,6 @@ try:
             client.sendto(msg, OSCaddress)
 
             GPIO.output(REC_LED, GPIO.LOW)
-            GPIO.output(PLAY_LED, GPIO.LOW)
 
         else:
             x_acc = measure_acc(x_adr)
