@@ -14,6 +14,8 @@ void Tone::setup(){
     pd = new Destination("127.0.0.1", PD_PORT);
     sensor = new Sensor(this, SENSOR_PORT);
     
+    pd->send("/s/test",1);
+    
 }
 
 void Tone::update(){
