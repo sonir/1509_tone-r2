@@ -16,6 +16,9 @@
 #include "Tone.h"
 class Tone;
 
+
+
+
 class Sensor : public slOscManager {
     
     public:
@@ -34,7 +37,6 @@ class Sensor : public slOscManager {
             slOscManager::update();
             
         }
-    
     
         void fireMessage(ofxOscMessage *m);
         Tone *sys;

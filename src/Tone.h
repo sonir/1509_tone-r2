@@ -16,6 +16,7 @@
 #include "Sensor.h"
 class Sensor;
 
+
 class Tone {
     
     public:
@@ -24,11 +25,14 @@ class Tone {
     void update();
     void test();
     void newValue(float &val);
-
+    void setSensorValue(float spd, int round);
+    void rec(bool flg);
     
     Sensor *sensor;
     Destination *pd;
-    
+    bool playback = false;
+    bool recording = false;
+  
     
 };
 
