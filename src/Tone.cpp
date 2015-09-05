@@ -23,7 +23,7 @@ void Tone::update(){
 }
 
 void Tone::test(){
-    
+    cout << "tone::test" << endl;
     pd->send("/test" , 137);
     
 }

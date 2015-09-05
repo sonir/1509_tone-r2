@@ -28,8 +28,14 @@ void ofApp::keyPressed(int key){
         
         tone.test();
         
+    }
+
+    if(key=='q'){
+        
+        OF_EXIT_APP(0);
         
     }
+
     
 }
 
