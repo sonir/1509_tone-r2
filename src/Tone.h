@@ -30,8 +30,8 @@ class Tone {
     
     Sensor *sensor;
     Destination *pd;
-    bool playback = false;
-    bool recording = false;
+    bool playback;
+    bool recording;
   
     
 };
